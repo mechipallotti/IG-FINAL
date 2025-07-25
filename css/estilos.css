@@ -4,7 +4,9 @@
   font-style: normal;
 
  }
- 
+ html {
+  scroll-behavior: smooth;
+}
 /* pag inicio acomode - ACOMODAR DESPUES */
 
     .inicio{
@@ -59,10 +61,33 @@
   50% { border-color: transparent; }
 }
 
+
+.animacion-img {
+  transition: transform 0.7s ease, opacity 0.4s ease;
+}
+
+.animacion-img.hovered {
+  transform: scale(2);
+  opacity: 0.9;
+}
+
+
+/* Tipografías */
+.billy {
+  font-family: "Bebas Neue";
+  color: #1d0268; /* o el color que estés usando */
+  font-size: 1.5em;
+
+}
+
 .autor{
   font-size: 6rem;
   color: rgba(9, 57, 129, 0.597);
   
+}
+
+h2{
+  font-size: 4rem;
 }
 
 h3{
@@ -76,10 +101,12 @@ h3{
  
 }
 
+a{
+  color: #a70e0e;
+  text-decoration: underline;
+}
 
-/*  MAS PRUEBSA */
 
-/* Tipografías */
 .timeline h4 {
   font-family: 'Oswald', sans-serif;
   color: #3e0404;
@@ -139,4 +166,42 @@ h3{
   display: flex;
   gap: 1rem;
   align-items: flex-start;
+}
+
+
+/* pruebas para seccion del libro */
+.scroll-images {
+  display: flex;
+  flex-direction: column;
+  height: 800vh; /* total de 3 imágenes */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.image-slide {
+  scroll-snap-align: start;
+}
+
+
+/* DIF ESTETICAS*/
+
+.estetica01 {
+  background-color: #f0e7ce; 
+  color: #c52b17;
+  font-family: "Anton", sans-serif;
+}
+.estetica02 {
+   max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+   background-color:#c52b17 ; 
+   color: #f0e7ce;
+
+}
+
+
+
+footer{
+  color: rgb(87, 25, 14);
+  text-align: center;
 }
