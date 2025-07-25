@@ -1,9 +1,10 @@
-body{
-  font-family: "Bebas Neue" ;
-  font-weight: 400;
+ * {
+  box-sizing: border-box;
+  font-family: "Anton";
   font-style: normal;
 
-}
+ }
+ 
 /* pag inicio acomode - ACOMODAR DESPUES */
 
     .inicio{
@@ -32,3 +33,110 @@ body{
     .nav-link:hover {
       color: rgb(127, 47, 47);
     }
+
+  /* animacion */
+
+  .escritura {
+  font-family: "Bebas Neue";
+  overflow: hidden;
+  border-right: 2px solid rgb(0, 0, 0);
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(20, end) forwards, blink 0.7s step-end infinite;
+  color: #1d0268; /* o el color que estés usando */
+  font-size: 5rem;
+  display: inline-block;
+
+
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 15ch; } /* cantidad de caracteres a mostrar */
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.autor{
+  font-size: 6rem;
+  color: rgba(9, 57, 129, 0.597);
+  
+}
+
+h3{
+   font-family: "Bebas Neue";
+  color: rgba(198, 198, 198, 0.831);
+  font-size: 1.5rem;
+}
+.p-maquina {
+  font-family: monospace;
+  font-size: 1rem;
+ 
+}
+
+
+/*  MAS PRUEBSA */
+
+/* Tipografías */
+.timeline h4 {
+  font-family: 'Oswald', sans-serif;
+  color: #3e0404;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline p {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #a89f9f;
+}
+
+/* Línea de tiempo base */
+.timeline {
+  position: relative;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  border-left: 4px solid #000;
+}
+
+/* Cada ítem */
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2rem;
+}
+
+/* Marcador en la línea */
+.timeline-marker {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #bfbfbf;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Contenido */
+.timeline-content {
+  background-color: #fefae0;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.img-timeline {
+  border-radius: 5em;
+  width: 100px;
+}
+
+.timeline-inner {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
