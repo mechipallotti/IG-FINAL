@@ -1,8 +1,6 @@
  * {
   box-sizing: border-box;
   font-family: "Anton";
-  font-style: normal;
-
  }
  html {
   scroll-behavior: smooth;
@@ -67,7 +65,7 @@
 }
 
 .animacion-img.hovered {
-  transform: scale(2);
+  transform: scale(1.1);
   opacity: 0.9;
 }
 
@@ -199,9 +197,92 @@ a{
 
 }
 
+.estetica03{
+  background-color: black;
+  background-image: url("../img/tranfalmadorianos.pinturas1.png");
+  background-size: cover;
+}
+
 
 
 footer{
   color: rgb(87, 25, 14);
   text-align: center;
 }
+
+
+/* Estilos para la sección de frases */
+.contenedor-frases {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  padding: 5rem;
+  margin: auto;
+}
+
+.frase-caja {
+  background-color: #fcfcfc35;
+  padding: 5rem;
+  font-size: 1.3rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.frase-caja:hover {
+  transform: scale(1.02);
+  color: #fdec06;
+  text-shadow: 2 2 20px, rgba(0,0,0,0.08);
+}
+
+
+ .panel {
+      display: flex;
+      
+      align-items: center;
+   
+      min-height: 100vh;
+      padding: 4rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .texto {
+      max-width: 700px;
+      margin-bottom: 2rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in forwards;
+      opacity: 0;
+    }
+
+    .texto h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .texto p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .imagen img {
+      max-width: 90vw;
+      max-height: 60vh;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transform: scale(0.95);
+      transition: transform 1s ease;
+    }
+
+    .panel:hover .imagen img {
+      transform: scale(1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+  
