@@ -286,11 +286,35 @@ footer{
     }
 
   /* juego */
+
+
   .juego-container {
     overflow: hidden;
     margin: 0;
     background-color: #000;
   }
+
+.pantalla-inicio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  text-align: center;
+}
+
+.botones-intentos button.active {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
 
   #intentos {
     color: #a70e0e;

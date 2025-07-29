@@ -42,12 +42,33 @@
 
   <main class="container-fluid juego-container">
 
+    <!-- PANTALLA INICIO -->
+     <div id="pantalla-inicio" class="pantalla-inicio">
+      <h1 class="titulo del juego"> Asi es la vida - Juego de Memoria</h1>
+      <h3>Seleccione la cantidad de intentos:</h3>
+      <div class="botones-intentos ">
+        <button class="btn btn-outline-light intento-btn" data-intentos ="10">10</button>
+        <button class="btn btn-outline-light intento-btn" data-intentos ="15">15</button>
+        <button class="btn btn-outline-light intento-btn" data-intentos ="20">20</button>
+      </div>
+      <button id="btn-jugar" class="btn btn-success mt-4" disabled>JUGAR</button>
+     </div>
+
 
     <!-- PANTALLA JUEGO -->
     <div id="intentos">0 intentos</div>
     <div id="wrapped">
       <div id="juego"></div>
     </div>
+
+    <!-- PANTALLA FINAL -->
+     <div id="pantalla-final" class="pantalla-inicio" style="display: none;">
+      <h1 id="mensaje-final">ASI ES LA VIDA</h1>
+      <div class="mt-4">
+        <button id="btn-reiniciar" class="btn btn-light m-2">JUGAR DE NUEVO</button>
+        <a href="index.html" class="btn btn-light m-2">Volver a la pagina</a>
+      </div>
+     </div>
 
   </main>
   <footer>
