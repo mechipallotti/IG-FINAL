@@ -81,7 +81,6 @@
 .autor{
   font-size: 6rem;
   color: rgba(9, 57, 129, 0.597);
-  
 }
 
 h2{
@@ -355,4 +354,141 @@ footer{
     transform: rotateY(0deg);
   }
 
+ .carousel-inner img {
+  width: 50%;
+  height: 50%; /* o el alto que prefieras */
+  border-radius: 12px; /* opcional, para bordes redondeados */
+  
+}
 
+.texto a {
+  color: #d0c7c7;
+  text-decoration: underline;
+}
+
+.texto h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: rgba(9, 57, 129, 0.597);
+  margin-bottom: 2rem;
+}
+
+.texto h3 {
+  font-style: italic, sans-serif;
+  text-align: center;
+  color: rgb(71, 76, 77);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.texto p {
+  font-family: 'Anton', sans-serif;
+   font-family: monospace;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+}
+
+
+/* Estilos para la sección de hoster */
+.hoster-container{
+  background-image: url('../img/tranfalmadorianos.pinturas1.png');
+  background-size: contain;
+  height: 100vh;
+}
+.hoster-section {
+  background-color: #131313b1; /* Color de fondo */
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 12px;
+}
+.hoster-section img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.texto-hoster h2{
+  font-family: "Anton", sans-serif;
+  color: rgba(106, 146, 205, 0.942);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.texto-hoster p {
+  font-family: monospace;
+  text-align: center;
+  color: #ffffff;  
+  margin-top: 1rem;
+}
+
+/* Estilos para la sección de contacto */
+
+.form-container{
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 8px rgb(21, 13, 13);
+  color: #e0e0e0;
+}
+.form-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/*estilos para la subpagina de billy*/
+
+.billy-container {
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f1eb;
+  color: #c9c5c5;
+  
+}
+
+.billy-inicio h1 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 7rem;
+  color: #a03f31;
+  margin-bottom: 1rem;
+}
+
+.division{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.boton-saltar{
+  display: inline-block;
+  background-color: #8a944257;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border-style: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  
+}
+
+#lineadetiempo nav a {
+  margin: 3rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #b72435e4;
+  color: #ffffff;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease; 
+
+}

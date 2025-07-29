@@ -75,3 +75,22 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(img);
   });
 });
+
+
+// INTERACCION IMAGEN EN ABOUT ME.
+
+const aboutImage = document.getElementById('change-img');
+        const originalSrc = aboutImage.src;
+        const newSrc = 'img/yo2.gif'; // Cambia esto por la URL de tu nueva imagen
+
+        aboutImage.addEventListener('click', function() {
+            aboutImage.src = (aboutImage.src === originalSrc) ? newSrc : originalSrc;
+        });
+
+// ANIMACION EN SUBPAGINA BILLY
+
+ function saltarEnElTiempo() {
+      const secciones = ['#a1922', '#a1944', '#a1945', '#a1955', '#a1967', '#a1976', '#tralfamadore'];
+      const destino = secciones[Math.floor(Math.random() * secciones.length)];
+      location.href = destino;
+    }
