@@ -195,12 +195,13 @@ a{
    color: #f0e7ce;
 
 }
-
 .estetica03{
   background-color: black;
   background-image: url("../img/tranfalmadorianos.pinturas1.png");
   background-size: cover;
 }
+
+
 
 
 
@@ -458,6 +459,12 @@ footer{
   font-size: 7rem;
   color: #a03f31;
   margin-bottom: 1rem;
+  width: 100%;
+}
+
+.billy-container p{
+  font-family: monospace;
+  color: #000;
 }
 
 .division{
@@ -491,4 +498,49 @@ footer{
   border-radius: 8px;
   transition: background-color 0.3s ease; 
 
+}
+
+.img-billy-ilustraciones {
+  width: 50%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para la sección de libros */
+
+.div-libros {
+  background-color: #fcfcfc35;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+.div-libros img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow:0 8px 8px rgb(21, 13, 13);
+ margin-top: 1rem;
+}
+
+.h2-libro{
+  color: #910a0a;
+  font-size: 7rem;
+  margin-bottom: 1rem;
+
+}
+
+.div-libros h3 {
+  font-family: "ANTON";
+  color: #721b1b;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.div-libros p {
+  color: #4a4a4a;
+  margin-bottom: 0.5rem;
 }
