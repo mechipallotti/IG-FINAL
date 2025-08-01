@@ -103,27 +103,27 @@ a{
   text-decoration: underline;
 }
 
+/* Estilos para Linea de Tiempo */
 
-.timeline h4 {
-  font-family: 'Oswald', sans-serif;
-  color: #3e0404;
-  font-size: 1.5rem;
+
+.timeline h4 { 
+  color: rgba(9, 57, 129, 0.597);
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
 .timeline p {
   font-family: monospace;
   font-size: 0.8rem;
-  color: #a89f9f;
+  color: #928989;
 }
 
-/* Línea de tiempo base */
+
 .timeline {
-  position: relative;
   margin: 3rem auto;
   padding: 2rem 1rem;
   max-width: 800px;
-  border-left: 4px solid #000;
+  border-left: 4px solid #000000;
 }
 
 /* Cada ítem */
@@ -140,22 +140,22 @@ a{
   left: -10px;
   width: 20px;
   height: 20px;
-  background-color: #bfbfbf;
-  border: 3px solid #fff;
+  background-color: rgba(9, 57, 129, 0.597);
+  border: 3px solid #c6c6c6;
   border-radius: 50%;
   z-index: 1;
 }
 
 /* Contenido */
 .timeline-content {
-  background-color: #fefae0;
+  background-color: #e4ebf2e9;
   padding: 1rem;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .img-timeline {
-  border-radius: 5em;
+  border-radius: 1rem;
   width: 100px;
 }
 
@@ -163,6 +163,22 @@ a{
   display: flex;
   gap: 1rem;
   align-items: flex-start;
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.timeline-item.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.estetica04 a {
+  color:rgba(9, 57, 129, 0.597) ;
+  font-size: 2rem;
 }
 
 
@@ -196,11 +212,17 @@ a{
 
 }
 .estetica03{
-  background-color: black;
+  
   background-image: url("../img/tranfalmadorianos.pinturas1.png");
-  background-size: cover;
+  background-size: contain;
+
 }
 
+.estetica04{
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 
@@ -240,9 +262,7 @@ footer{
 
  .panel {
       display: flex;
-      
       align-items: center;
-   
       min-height: 100vh;
       padding: 4rem 2rem;
       position: relative;
@@ -374,7 +394,7 @@ footer{
   }
 
   .carta .boca-abajo {
-    background-image: url("../img/boca-abajo.jpg");
+    background-image: url("../juego/juego-img/boca-abajo.jpg");
     background-size: contain;
     transform: rotateY(0deg);
   }
@@ -417,12 +437,11 @@ footer{
 
 /* Estilos para la sección de hoster */
 .hoster-container{
-  background-image: url('../img/tranfalmadorianos.pinturas1.png');
-  background-size: contain;
   height: 100vh;
 }
+
 .hoster-section {
-  background-color: #131313b1; /* Color de fondo */
+  background-color: #eaeeeeb1; /* Color de fondo */
   padding: 2rem;
   margin: 2rem;
   border-radius: 12px;
@@ -442,8 +461,12 @@ footer{
 .texto-hoster p {
   font-family: monospace;
   text-align: center;
-  color: #ffffff;  
+  color: #5a5757;  
   margin-top: 1rem;
+}
+
+.texto-hoster h3{
+  color: rgba(106, 146, 205, 0.942);
 }
 
 /* Estilos para la sección de contacto */
@@ -534,7 +557,7 @@ footer{
 /* Estilos para la sección de libros */
 
 .div-libros {
-  background-color: #fcfcfc35;
+  background-color: #fffffff2;
   border-radius: 8px;
   max-width: 600px;
   margin: 0 auto;
@@ -567,4 +590,22 @@ footer{
 .div-libros p {
   color: #4a4a4a;
   margin-bottom: 0.5rem;
+}
+
+/*estilos para la seccion de narracion*/
+
+.galeria-container {
+  max-width:800px;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  background-color: #000;
+}
+
+.galeria-imagen img {
+  max-height: 70vh;
+  object-fit: contain;
+  width: 100%;
 }
