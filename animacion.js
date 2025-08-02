@@ -105,43 +105,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const imagenesGaleria = [
      {
-      src: "../fragmento/fragmento-img/fragmento1.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento1.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento2.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento2.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento3.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento3.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento4.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento4.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento5.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento5.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento6.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento6.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento7.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento7.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento8.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento8.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento9.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento9.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento10.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento10.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento11.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento11.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento12.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento12.jpg",
     },
     {
-      src: "../fragmento/fragmento-img/fragmento13.jpg",
+      src: "../ilustracion/ilustracion-img/fragmento-img/fragmento13.jpg",
 
     },
     

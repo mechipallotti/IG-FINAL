@@ -1,42 +1,43 @@
- * {
+* {
   box-sizing: border-box;
   font-family: "Anton";
- }
- html {
+}
+html {
   scroll-behavior: smooth;
 }
-/* pag inicio acomode - ACOMODAR DESPUES */
 
-    .inicio{
-      height: 100vh;
-      font-size: 20px;
-      color: rgb(255, 255, 255);
-      background-color: black;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    }
-    .image {
-      max-width: 800px;
-      height: auto;
-    }
+/* PAGINA DE INICIO */
 
-    .resaltado {
-      color: brown;
-    }
+.inicio {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.image {
+  max-width: 100%;
+  height: auto;
+}
 
-    .navbar-personalizado, .nav-link{
-         background-color: #000000;
-         color: #efdec0;
-    }
+.resaltado {
+  color: brown;
+}
 
-    .nav-link:hover {
-      color: rgb(127, 47, 47);
-    }
+.navbar-personalizado,
+.nav-link {
+  background-color: #000000;
+  color: #efdec0;
+}
 
-  /* animacion */
+.nav-link:hover {
+  color: rgb(127, 47, 47);
+}
 
-  .escritura {
+/* ANIMACION EN TITULOS E IMAGEN */
+
+.escritura {
   font-family: "Bebas Neue";
   overflow: hidden;
   border-right: 2px solid rgb(0, 0, 0);
@@ -46,19 +47,22 @@
   color: #1d0268; /* o el color que estés usando */
   font-size: 5rem;
   display: inline-block;
-
-
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 15ch; } /* cantidad de caracteres a mostrar */
+  from {
+    width: 0;
+  }
+  to {
+    width: 15ch;
+  } /* cantidad de caracteres a mostrar */
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
-
 
 .animacion-img {
   transition: transform 0.7s ease, opacity 0.4s ease;
@@ -69,44 +73,41 @@
   opacity: 0.9;
 }
 
+/* TIPOGRAFIAS Y MODIFICACIONES EN TEXTOS */
 
-/* Tipografías */
 .billy {
   font-family: "Bebas Neue";
   color: #1d0268; /* o el color que estés usando */
   font-size: 1.5em;
-
 }
 
-.autor{
+.autor {
   font-size: 6rem;
   color: rgba(9, 57, 129, 0.597);
 }
 
-h2{
+h2 {
   font-size: 4rem;
 }
 
-h3{
-   font-family: "Bebas Neue";
+h3 {
+  font-family: "Bebas Neue";
   color: rgba(198, 198, 198, 0.831);
   font-size: 1.5rem;
 }
 .p-maquina {
   font-family: monospace;
   font-size: 1rem;
- 
 }
 
-a{
+a {
   color: #a70e0e;
   text-decoration: underline;
 }
 
-/* Estilos para Linea de Tiempo */
+/* ESTILOS PARA SUBPAGINA LINEA DE TIEMPO */
 
-
-.timeline h4 { 
+.timeline h4 {
   color: rgba(9, 57, 129, 0.597);
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -117,7 +118,6 @@ a{
   font-size: 0.8rem;
   color: #928989;
 }
-
 
 .timeline {
   margin: 3rem auto;
@@ -131,6 +131,14 @@ a{
   position: relative;
   margin-bottom: 3rem;
   padding-left: 2rem;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Marcador en la línea */
@@ -151,7 +159,7 @@ a{
   background-color: #e4ebf2e9;
   padding: 1rem;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .img-timeline {
@@ -165,22 +173,10 @@ a{
   align-items: flex-start;
 }
 
-.timeline-item {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.6s ease-out;
-}
-
-.timeline-item.visible{
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .estetica04 a {
-  color:rgba(9, 57, 129, 0.597) ;
+  color: rgba(9, 57, 129, 0.597);
   font-size: 2rem;
 }
-
 
 /* pruebas para seccion del libro */
 .scroll-images {
@@ -195,45 +191,38 @@ a{
   scroll-snap-align: start;
 }
 
-
 /* DIF ESTETICAS*/
 
 .estetica01 {
-  background-color: #f0e7ce; 
+  background-color: #f0e7ce;
   color: #c52b17;
   font-family: "Anton", sans-serif;
 }
 .estetica02 {
-   max-width: 700px;
+  max-width: 700px;
   margin: 0 auto;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
-   background-color:#c52b17 ; 
-   color: #f0e7ce;
-
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  background-color: #c52b17;
+  color: #f0e7ce;
 }
-.estetica03{
-  
+.estetica03 {
   background-image: url("../img/tranfalmadorianos.pinturas1.png");
   background-size: contain;
-
 }
 
-.estetica04{
+.estetica04 {
   background-image: url("../img/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
-
-
-footer{
+footer {
   color: rgb(87, 25, 14);
   text-align: center;
 }
 
+/* ESTILOS PARA LA PAG DE FRASES */
 
-/* Estilos para la sección de frases */
 .contenedor-frases {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -256,63 +245,63 @@ footer{
 .frase-caja:hover {
   transform: scale(1.02);
   color: #fdec06;
-  text-shadow: 2 2 20px, rgba(0,0,0,0.08);
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.texto {
+  max-width: 700px;
+  margin-bottom: 2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in forwards;
+  opacity: 0;
+}
+
+.texto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 
- .panel {
-      display: flex;
-      align-items: center;
-      min-height: 100vh;
-      padding: 4rem 2rem;
-      position: relative;
-      overflow: hidden;
-    }
 
-    .texto {
-      max-width: 700px;
-      margin-bottom: 2rem;
-      text-align: center;
-      animation: fadeIn 1.5s ease-in forwards;
-      opacity: 0;
-    }
+.imagen img {
+  max-width: 90vw;
+  max-height: 60vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
+  transition: transform 1s ease;
+}
 
-    .texto h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
+.panel:hover .imagen img {
+  transform: scale(1);
+}
 
-    .texto p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    .imagen img {
-      max-width: 90vw;
-      max-height: 60vh;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      transform: scale(0.95);
-      transition: transform 1s ease;
-    }
-
-    .panel:hover .imagen img {
-      transform: scale(1);
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-  /* juego */
-
-
-  .juego-container {
-    overflow: hidden;
-    margin: 0;
-    background-color: #000;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* JUEGO */
+
+.juego-container {
+  margin: 0;
+  background-color: #000;
+}
 
 .pantalla-inicio {
   position: fixed;
@@ -336,74 +325,72 @@ footer{
   font-weight: bold;
 }
 
-  #intentos {
-    color: #a70e0e;
-    position: absolute;
-    padding: 1rem;
-    text-align: center;
-    width: 100%;
-    font-size: 1.5rem;
-  }
+#intentos {
+  color: #a70e0e;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
 
-  #wrapped {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+#wrapped {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-  #juego {
-    height: 100vh;
-    max-height: 700px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+#juego {
+  height: 100vh;
+  max-height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
-  .carta {
-    width: 200px ;
-    height: 250px;
-    margin: 1rem;
-    position: relative;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
-  }
+.carta {
+  width: 200px;
+  height: 250px;
+  margin: 1rem;
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
 
-  .carta.active {
-    transform: rotateY(180deg);
-  }
+.carta.active {
+  transform: rotateY(180deg);
+}
 
-  .carta div {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    border-radius: 5px;
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
+.carta div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
 
-  }
+.carta .boca-arriba {
+  transform: rotateY(180deg);
+}
 
-  .carta .boca-arriba {
-    transform: rotateY(180deg);
-  }
+.carta .boca-abajo {
+  background-image: url("../juego/juego-img/boca-abajo.jpg");
+  background-size: contain;
+  transform: rotateY(0deg);
+}
 
-  .carta .boca-abajo {
-    background-image: url("../juego/juego-img/boca-abajo.jpg");
-    background-size: contain;
-    transform: rotateY(0deg);
-  }
-
- .carousel-inner img {
+.carousel-inner img {
   width: 50%;
   height: 50%; /* o el alto que prefieras */
   border-radius: 12px; /* opcional, para bordes redondeados */
-  
 }
 
 .texto a {
@@ -419,7 +406,6 @@ footer{
 }
 
 .texto h3 {
-  font-style: italic, sans-serif;
   text-align: center;
   color: rgb(71, 76, 77);
   font-size: 1rem;
@@ -427,18 +413,16 @@ footer{
 }
 
 .texto p {
-  font-family: 'Anton', sans-serif;
-   font-family: monospace;
+  font-family: "Anton", sans-serif;
+  font-family: monospace;
   text-align: center;
   font-size: 0.8rem;
   color: rgb(0, 0, 0);
+  line-height: 1.6;
 }
 
+/* ESTILOS PARA LA SECCION DE HOSTER */
 
-/* Estilos para la sección de hoster */
-.hoster-container{
-  height: 100vh;
-}
 
 .hoster-section {
   background-color: #eaeeeeb1; /* Color de fondo */
@@ -452,7 +436,7 @@ footer{
   border-radius: 12px;
 }
 
-.texto-hoster h2{
+.texto-hoster h2 {
   font-family: "Anton", sans-serif;
   color: rgba(106, 146, 205, 0.942);
   font-size: 3rem;
@@ -461,17 +445,17 @@ footer{
 .texto-hoster p {
   font-family: monospace;
   text-align: center;
-  color: #5a5757;  
+  color: #5a5757;
   margin-top: 1rem;
 }
 
-.texto-hoster h3{
+.texto-hoster h3 {
   color: rgba(106, 146, 205, 0.942);
 }
 
-/* Estilos para la sección de contacto */
+/* ESTILOS PARA LA SECCION DE CONTACTO */
 
-.form-container{
+.form-container {
   max-width: 600px;
   margin: 0 auto;
   margin-top: 5rem;
@@ -480,7 +464,7 @@ footer{
   box-shadow: 0 8px 8px rgb(21, 13, 13);
   color: #e0e0e0;
 }
-.form-row{
+.form-row {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -490,37 +474,42 @@ footer{
   margin-bottom: 1rem;
 }
 
-/*estilos para la subpagina de billy*/
+/* ESTILOS PARA LA SUBPAGINA DE BILLY*/
 
 .billy-container {
   flex-direction: column;
   align-items: center;
   background-color: #f5f1eb;
   color: #c9c5c5;
-  
 }
 
 .billy-inicio h1 {
   margin-top: 1rem;
   text-align: center;
-  font-size: 7rem;
+  font-size: 5rem;
   color: #a03f31;
   margin-bottom: 1rem;
   width: 100%;
 }
 
-.billy-container p{
+.billy-inicio h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.billy-container p {
+  margin-top: 1rem;
   font-family: monospace;
   color: #000;
 }
 
-.division{
+.division {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 100%;
 }
 
-.boton-saltar{
+.boton-saltar {
   display: inline-block;
   background-color: #8a944257;
   color: #fff;
@@ -529,7 +518,6 @@ footer{
   border-style: none;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
-  
 }
 
 #lineadetiempo nav a {
@@ -543,8 +531,7 @@ footer{
   text-decoration: none;
   text-align: center;
   border-radius: 8px;
-  transition: background-color 0.3s ease; 
-
+  transition: background-color 0.3s ease;
 }
 
 .img-billy-ilustraciones {
@@ -554,7 +541,7 @@ footer{
   justify-content: center;
 }
 
-/* Estilos para la sección de libros */
+/* ESTILOS PARA LA SECCION DE LIBROS */
 
 .div-libros {
   background-color: #fffffff2;
@@ -569,15 +556,14 @@ footer{
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow:0 8px 8px rgb(21, 13, 13);
- margin-top: 1rem;
+  box-shadow: 0 8px 8px rgb(21, 13, 13);
+  margin-top: 1rem;
 }
 
-.h2-libro{
+.h2-libro {
   color: #910a0a;
-  font-size: 7rem;
+  font-size: 5rem;
   margin-bottom: 1rem;
-
 }
 
 .div-libros h3 {
@@ -592,10 +578,10 @@ footer{
   margin-bottom: 0.5rem;
 }
 
-/*estilos para la seccion de narracion*/
+/*ESTILOS PARA LA SECCION DE FRAGMENTO*/
 
 .galeria-container {
-  max-width:800px;
+  max-width: 800px;
   border-radius: 8px;
   margin: 0 auto;
   margin-top: 1rem;
@@ -609,3 +595,63 @@ footer{
   object-fit: contain;
   width: 100%;
 }
+
+/* ALGUNAS MODIFICACIONES PARA MEJORAR EL RESPONSIVE */
+
+@media (max-width: 1024px) {
+  .inicio {
+    height: 100%;
+  }
+
+  .escritura {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  /* JUEGO */
+
+  .carta {
+    width: 120px;
+    height: 150px;
+    margin: 0.5rem;
+  }
+
+  #juego{
+    height: auto;
+    padding: 1rem;
+    max-height: none;
+    gap: 1rem;
+  }
+
+  #intentos{
+    font-size: 1.2rem;
+    position: static;
+    margin: 1rem 0;;
+  }
+
+  .pantalla-inicio h1,
+  .pantalla-inicio h3 {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .botones-intentos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #wrapped {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .contenedor-frases{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+
+}
+

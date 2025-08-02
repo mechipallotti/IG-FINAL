@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MATADERO CINCO || JUEGO DE MEMORIA</title>
+  <title>MATADERO CINCO || ILUSTRACION || ILUSTRADORES</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,7 +17,7 @@
 </head>
 
 <body class="d-flex flex-column vh-100">
-   <header>
+    <header>
     <div class="container-fluid gx-0 ">
       <nav class="navbar navbar-expand-lg navbar-personalizado">
         <a class="navbar-brand" href="../index.html"><img src="../img/inicio.prueba.png" alt="logo" width="30em"></a>
@@ -29,9 +29,9 @@
             <li class="nav-item"><a class="nav-link" href="../autor/index.html">KURT VONNEGUT</a></li>
             <li class="nav-item"><a class="nav-link" href="../libro/index.html">MATADERO CINCO</a></li>
             <li class="nav-item"><a class="nav-link" href="../personajes/index.html">PERSONAJES</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html">JUEGO</a></li>
+            <li class="nav-item"><a class="nav-link" href="../juego/index.html">JUEGO</a></li>
             <li class="nav-item"><a class="nav-link" href="../frases/index.html">FRASES</a></li>
-            <li class="nav-item"><a class="nav-link" href="../ilustracion/index.html">ILUSTRACION</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">ILUSTRACION</a></li>
             <li class="nav-item"><a class="nav-link" href="../form/index.html">CONTACTARSE</a></li>
             <li class="nav-item"><a class="nav-link" href="../about-me/index.html">HOSTER</a></li>
           </ul>
@@ -39,47 +39,56 @@
       </nav>
     </div>
   </header>
+  <main class="container-fluid">
 
-  <main class="container-fluid juego-container">
-
-    <!-- PANTALLA INICIO -->
-     <div id="pantalla-inicio" class="pantalla-inicio">
-      <h1 class="titulo del juego"> Asi es la vida - Juego de Memoria</h1>
-      <h3>Seleccione la cantidad de intentos:</h3>
-      <div class="botones-intentos ">
-        <button class="btn btn-outline-light intento-btn" data-intentos ="10">10</button>
-        <button class="btn btn-outline-light intento-btn" data-intentos ="15">15</button>
-        <button class="btn btn-outline-light intento-btn" data-intentos ="20">20</button>
+    <div class="row text-center mt-5 mb-5">
+      <div class="col-12 col-md-6">
+        <img src="ilustracion-img/albert-monteys.jpg" alt="albert-monteys" class="img-fluid">
       </div>
-      <button id="btn-jugar" class="btn btn-success mt-4" disabled>JUGAR</button>
-     </div>
+      <div class="col-12 col-md-6 mt-5">
+        <h2 class="autor escritura">Albert Monteys</h2>
+        <h3 class="mb-5">Barcelona, España, 15 de septiembre de 1971 </h3>
+        <p class="p-maquina">Albert Monteys (Barcelona, 1971) es dibujante, guionista y portador oficial de lápices
+          afilados. Saltó a la fama con su humor en revistas como El Jueves, pero luego se lanzó al espacio-tiempo con
+          su delirante cómic ¡Universo!. En Matadero Cinco agarró los rayones de Vonnegut y los convirtió en una ópera
+          gráfica de viajes temporales y absurdos existenciales. Le gusta el sci-fi, el humor negro y probablemente
+          desayuna ideas raras todos los días.</p>
+        <a href="fragmento.html" class="btn btn-outline-dark mt-3">ilustraciones</a>
+        <a href="index.html" class="btn btn-outline-dark mt-3">NOTA</a>
+
+      </div>
 
 
-    <!-- PANTALLA JUEGO -->
-    <div id="intentos">0 intentos</div>
-    <div id="wrapped">
-      <div id="juego"></div>
     </div>
 
-    <!-- PANTALLA FINAL -->
-     <div id="pantalla-final" class="pantalla-inicio" style="display: none;">
-      <h1 id="mensaje-final">ASI ES LA VIDA</h1>
-      <div class="mt-4">
-        <button id="btn-reiniciar" class="btn btn-light m-2">JUGAR DE NUEVO</button>
-        <a href="../index.html" class="btn btn-light m-2">Volver a la pagina</a>
+
+    <div class="row text-center mt-5">
+      <div class="col-12 col-md-6 mt-5">
+        <h2 class="autor escritura">Ryan North</h2>
+        <h3 class="mb-5">Barcelona, España, 15 de septiembre de 1971 </h3>
+        <p class="p-maquina">Ryan North (Canadá, 1980) es guionista, programador y probablemente viajero en el tiempo.
+          Inventó cómics con dinosaurios parlantes en Dinosaur Comics, escribió para Adventure Time, y hasta convirtió a
+          Shakespeare en elige-tu-propia-aventura. En Matadero Cinco se metió en el cerebro de Vonnegut y salió con una
+          adaptación tan brillante como absurda. Le encantan los experimentos narrativos, los chistes meta y los
+          plátanos (según Internet).</p>
       </div>
-     </div>
+      <div class="col-12 col-md-6">
+        <img src="ilustracion-img/ryan-north.jpg" alt="albert-monteys" class="img-fluid">
+      </div>
+
+
+    </div>
+
 
   </main>
   <footer>
     <p>&copy; Mercedes Pallotti Miranda, todos los derechos reservados</p>
   </footer>
 
-
+  <script src="../animacion.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="juego.js"></script>
 
 </body>
 
